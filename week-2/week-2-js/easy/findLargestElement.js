@@ -15,7 +15,7 @@ function findLargestElement(numbers) {
             max = numbers[i];
         }
     }
-    console.log(max);
+    return max;
 }
 
 
