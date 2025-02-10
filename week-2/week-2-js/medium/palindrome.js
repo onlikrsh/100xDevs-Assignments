@@ -4,7 +4,12 @@
 */
 
 function isPalindrome(str) {
-  return true;
+  const cleaned = str.toLowerCase().replace(/[\s,!.?]+/g, '');
+  // Split the cleaned string into characters, reverse the array, and join it back into a string.
+  const reversed = cleaned.split('').reverse().join('');
+
+  return cleaned === reversed;
+  
 }
 
 module.exports = isPalindrome;
